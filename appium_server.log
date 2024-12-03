@@ -1,0 +1,17 @@
+[38;5;112m[Appium][0m Welcome to Appium v2.12.1
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { loglevel: [32m'info'[39m }
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Appium REST http interface listener started on http://0.0.0.0:4723
+[38;5;112m[Appium][0m You can provide the following URLs in your client code to connect to this server:
+	http://169.254.138.72:4723/
+	http://192.168.100.17:4723/
+	http://127.0.0.1:4723/ (only accessible from the same host)
+[38;5;112m[Appium][0m Available drivers:
+[38;5;112m[Appium][0m   - uiautomator2@3.9.0 (automationName 'UiAutomator2')
+[38;5;112m[Appium][0m No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[38;5;124m[b85d14f0][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/b85d14f0-0d39-4bf1-8fcb-7784bee4a791/timeouts[39m [90m{}[39m
+[38;5;124m[b85d14f0][0m[38;5;86m[HTTP][0m [37m<-- GET /session/b85d14f0-0d39-4bf1-8fcb-7784bee4a791/timeouts [39m[33m404[39m [90m54 ms - 3231[39m [90m[39m
+[38;5;112m[Appium][0m Received SIGINT - shutting down
+[38;5;86m[HTTP][0m Closing Appium HTTP server
+[38;5;86m[HTTP][0m Appium HTTP server has been succesfully closed after 3ms
