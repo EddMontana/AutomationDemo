@@ -36,7 +36,7 @@ def driver():
     Initialize the Appium driver.
     Select the physical device if available, otherwise use the emulated device.
     """
-    
+
     if "physical" in info:    # Use physical device if available
         desired_caps = {
             "platformName": "Android",
@@ -69,7 +69,7 @@ def driver():
 
 
 # Hook to capture screenshots on failure
-@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+@pytest.hookimpl()
 def reporting(item):
     """
     Hook to capture screenshots on failure.
@@ -85,6 +85,8 @@ def reporting(item):
         driver = item.funcargs.get("driver")  # Access driver from test function args
         if driver: #if driver is correctly returned
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
             screenshot_path = f"debug/screenshots/{item.name}_{timestamp}.png" 
+
             driver.save_screenshot(screenshot_path)
             pytest.fail(f"Test failed. Screenshot saved to {screenshot_path}", pytrace=False)
